@@ -1,0 +1,166 @@
+<!doctype html>
+<html lang="id">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Kejutan Kecil Untuk Cantikku</title>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Playfair+Display:wght@500;600&family=Pacifico&display=swap');
+*{box-sizing:border-box}
+html,body{margin:0;min-height:100%;font-family:"DM Sans",sans-serif;color:#3b2422}
+body{background:#efe4ce}
+.page{display:none;min-height:100vh;position:relative;padding:28px 18px 85px;background-size:cover;background-position:center;background-attachment:fixed}
+.page.active{display:flex;align-items:center;justify-content:center}
+.card{width:min(820px,94vw);background:rgba(255,248,231,.91);border:1px solid rgba(91,48,39,.22);box-shadow:0 18px 50px rgba(57,30,24,.18);padding:30px;border-radius:18px}
+.center{text-align:center}
+.script{font-family:Pacifico,cursive}
+.serif{font-family:"Playfair Display",serif}
+.small{font-size:.9rem;opacity:.75}
+h1,h2{margin:.25em 0}
+h1{font-size:clamp(2.1rem,7vw,4.5rem)}
+h2{font-size:clamp(1.7rem,4vw,2.7rem)}
+p{line-height:1.8;font-size:1.03rem}
+button,.navbtn{border:0;background:#6e2927;color:#fff;padding:12px 18px;border-radius:999px;cursor:pointer;font-weight:700}
+button:hover,.navbtn:hover{transform:translateY(-1px)}
+.nav{position:fixed;z-index:50;bottom:16px;left:50%;transform:translateX(-50%);display:flex;gap:7px;flex-wrap:wrap;justify-content:center;background:rgba(58,28,25,.82);padding:8px;border-radius:999px;backdrop-filter:blur(8px)}
+.nav button{padding:8px 11px;font-size:.78rem}
+.photo-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:14px;margin-top:20px}
+.photo-grid img{width:100%;height:320px;object-fit:cover;border-radius:12px;box-shadow:0 7px 20px rgba(45,20,18,.16)}
+.photo-grid .wide{grid-column:1/-1;height:390px}
+.hero-photo{width:min(310px,80vw);height:310px;object-fit:cover;border-radius:50%;border:9px solid #f9eed8;box-shadow:0 12px 35px rgba(45,20,18,.2)}
+.polaroid{background:#fffdf6;padding:10px 10px 24px;box-shadow:0 10px 25px rgba(45,20,18,.18);transform:rotate(-1.5deg);margin:20px auto;width:min(390px,88vw)}
+.polaroid img{width:100%;display:block}
+.video-wrap video{width:100%;max-height:68vh;border-radius:14px;background:#211313}
+.music{display:inline-flex;align-items:center;gap:8px;margin-top:10px;text-decoration:none;color:#fff;background:#6e2927;padding:12px 18px;border-radius:999px}
+.note{font-size:.86rem;opacity:.72;margin-top:14px}
+.heart{font-size:2rem}
+@media(max-width:650px){
+ .card{padding:22px 17px}
+ .photo-grid{grid-template-columns:1fr}
+ .photo-grid img,.photo-grid .wide{height:330px}
+ .nav{max-width:96vw}
+}
+</style>
+</head>
+<body>
+
+<section class="page active" id="p1" style="background-image:url('backgrounds/bg1.jpg')">
+  <div class="card center">
+    <div class="small">a tiny little surprise</div>
+    <h1 class="script">Happy 25th</h1>
+    <h2 class="serif">Kejutan kecil, cute and sweet just like you</h2>
+    <img class="hero-photo" src="images/foto_bayi.jpeg" alt="foto kecil">
+    <p>Sayangku, sebelum sampai ke halaman yang lain aku cuma mau bilang satu hal</p>
+    <p class="script">aku seneng banget punya cantikku</p>
+    <button onclick="go(2)">lanjut ya ♡</button>
+  </div>
+</section>
+
+<section class="page" id="p2" style="background-image:url('backgrounds/bg3.jpg')">
+  <div class="card">
+    <div class="small">a little letter for you</div>
+    <h2 class="serif">Untuk cantikku, sayangku, cintaku</h2>
+    <p>Selamat ulang tahun ke 25 sayangku</p>
+    <p>Aku sebenarnya cuma pengen bilang kalau aku bahagia banget bisa terus sama kamu. Bahagia karena dari sekian banyak orang di dunia ini aku bisa ketemu sama kamu dan sampai sekarang masih bisa nemenin kamu ngelewatin banyak hal.</p>
+    <p>Cantikku, aku suka banget lihat kamu bahagia. Suka lihat kamu senyum, suka lihat kamu cerita, bahkan hal hal kecil tentang kamu pun entah kenapa selalu bikin aku seneng.</p>
+    <p>Aku nggak mau bikin surat ini terlalu serius karena nanti kamu malah ketawa. Jadi intinya cuma satu</p>
+    <p class="script" style="font-size:1.5rem">aku sayang banget sama kamu</p>
+    <p>Semoga umur 25 ini jadi awal dari banyak hal baik buat kamu. Dan kalau boleh aku minta satu hal, semoga aku masih boleh ada di samping kamu buat lihat semuanya.</p>
+    <p class="center script">love you, duniaku ♡</p>
+    <div class="center"><button onclick="go(3)">lihat cantikku →</button></div>
+  </div>
+</section>
+
+<section class="page" id="p3" style="background-image:url('backgrounds/bg2.jpg')">
+  <div class="card">
+    <div class="small">look at her ♡</div>
+    <h2 class="script">Cantikku lagi cantik cantiknya</h2>
+    <p>Foto foto terbaru cantikku. Aku taruh di sini karena aku suka banget lihat kamu begini.</p>
+    <div class="photo-grid">
+      <img src="images/foto_2.jpeg" alt="foto 1">
+      <img src="images/foto_3.jpeg" alt="foto 2">
+      <img src="images/foto_1.jpeg" alt="foto 3">
+      <img src="images/foto_7.jpeg" alt="foto 4">
+      <img class="wide" src="images/foto_4.jpeg" alt="foto 5">
+    </div>
+    <p class="center script" style="font-size:1.35rem">iya iya aku tau kamu cantik jangan senyum senyum sendiri</p>
+    <div class="center"><button onclick="go(4)">ada satu video →</button></div>
+  </div>
+</section>
+
+<section class="page" id="p4" style="background-image:url('backgrounds/bg4.jpg')">
+  <div class="card">
+    <div class="small">press play</div>
+    <h2 class="serif">Walaupun videonya udah kamu lihat hehe</h2>
+    <p>Aku masukin lagi karena aku tetap mau halaman ini punya satu tempat buat momen itu.</p>
+    <div class="video-wrap">
+      <video controls playsinline>
+        <source src="video/video_ulang_tahun.mp4" type="video/mp4">
+        Browser kamu belum bisa memutar video ini.
+      </video>
+    </div>
+    <div class="center"><button onclick="go(5)">next ♡</button></div>
+  </div>
+</section>
+
+<section class="page" id="p5" style="background-image:url('backgrounds/bg1.jpg')">
+  <div class="card center">
+    <div class="small">a song for you</div>
+    <h2 class="script">P.S. I Love You</h2>
+    <p>Paul Partohap</p>
+    <p>Kalau halaman ini dibuka sambil dengerin lagunya rasanya lebih pas. Jadi tinggal tekan tombolnya ya sayangku.</p>
+    <a class="music" href="https://youtu.be/n5i3QRvPA9Y" target="_blank" rel="noopener">♫ Dengarkan lagunya</a>
+    <p class="note">Kalau tombol tidak membuka YouTube, copy link ini ke browser: https://youtu.be/n5i3QRvPA9Y</p>
+    <div class="polaroid">
+      <img src="images/foto_5.jpeg" alt="foto cantikku">
+      <div class="center small" style="margin-top:10px">one of my favorite views</div>
+    </div>
+    <button onclick="go(6)">masih ada satu lagi →</button>
+  </div>
+</section>
+
+<section class="page" id="p6" style="background-image:url('backgrounds/bg3.jpg')">
+  <div class="card">
+    <div class="small">one more thing</div>
+    <h2 class="serif">Cintaku</h2>
+    <p>Aku mungkin nggak selalu jago bikin kata kata yang bagus. Kadang malah bingung sendiri mau ngomong apa.</p>
+    <p>Tapi kalau soal kamu aku selalu punya banyak hal yang mau aku bilang.</p>
+    <p>Aku bahagia sama kamu. Sesimpel itu.</p>
+    <p>Bahagia karena bisa kenal kamu, bisa dekat sama kamu, bisa bikin kamu senyum walaupun cuma sedikit. Dan aku berharap rasa bahagia ini bukan cuma buat hari ini.</p>
+    <p>Selamat ulang tahun ke 25 sayangku. Semoga kamu selalu punya banyak alasan buat senyum dan semoga aku masih jadi salah satu alasan kecilnya.</p>
+    <p class="script center" style="font-size:1.5rem">I love you, cantikku</p>
+    <div class="center"><button onclick="go(7)">halaman terakhir →</button></div>
+  </div>
+</section>
+
+<section class="page" id="p7" style="background-image:url('backgrounds/bg4.jpg')">
+  <div class="card center">
+    <div class="heart">♡</div>
+    <h1 class="script">Duniaku</h1>
+    <div class="polaroid" style="transform:rotate(1deg)">
+      <img src="images/foto_6.jpeg" alt="foto berdua">
+      <div class="center small" style="margin-top:10px">still us ♡</div>
+    </div>
+    <p class="serif" style="font-size:1.25rem">Terima kasih sudah jadi bagian dari hari hariku</p>
+    <p>Selamat ulang tahun cantikku</p>
+    <p class="script" style="font-size:1.7rem">semoga kita terus begini ya</p>
+    <p class="small">— dari orang yang sayang banget sama kamu</p>
+  </div>
+</section>
+
+<div class="nav">
+  <button onclick="go(1)">01</button><button onclick="go(2)">02</button>
+  <button onclick="go(3)">03</button><button onclick="go(4)">04</button>
+  <button onclick="go(5)">05</button><button onclick="go(6)">06</button>
+  <button onclick="go(7)">07</button>
+</div>
+
+<script>
+function go(n){
+  document.querySelectorAll('.page').forEach(p=>p.classList.remove('active'));
+  const el=document.getElementById('p'+n);
+  if(el){el.classList.add('active'); window.scrollTo({top:0,behavior:'smooth'});}
+}
+</script>
+</body>
+</html>
